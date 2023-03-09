@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+}
+
+.btn-scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: #abb1a8;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    transform: translateY(100px);
+    transition: 0.5s;
+    cursor:pointer;
+  }
+
+  .btn-scrolltop-on {
+    transform: translateY(0);
+  }
+
+.btn-scrolltop:hover {
+    background-color:#ffffff;
+    }
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    background: #65b9af;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 0 10px black;
+    grid-area: menu;
+    border-radius:8px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    transition:all .3s
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background: #004958;
+}
+
+
+.activo {
+    background-color: #004958;
+}
+
+
+.imagen {
+    border: 2px solid #ffffff;
+    padding: 6px;
+    margin: 30px;
+    grid-area: imagen;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.nombre {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.apellido {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.infoprofesion {
+    font-style: italic;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.descripcion {
+    text-align: center;
+}
+
+/**
+Experiencia 
+*/
+
+.contenedor-experiencia {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.intro {
+    padding: 100px 0;
+}
+  
+  
+.experienciatitulo {
+    font-size: 70px;
+    text-align: center;
+  }
+
+
+
+.trabajo {
+    color: #000000;
+    font-size: 25px
+}
+
+.descripciontrabajo {
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**
+Estudios
+*/
+
+
+.contenedor-estudios {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+
+.intro-estudios {
+    padding: 100px 0;
+}
+  
+
+.estudiostitulo {
+    font-size: 75px;
+    text-align: center;
+}
+
+
+.universitario,
+.cursos {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.show  {
+    display: block;
+}
+
+
+.uni1,
+.cursos1 {
+    color: #000000; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #adb1aa; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 0px 0px 0px 0px; 
+    -moz-border-radius: 0px 0px 0px 0px; 
+    -webkit-border-radius: 0px 0px 0px 0px; 
+    order: 2px solid #727570;
+}
+
+.año {
+    font-size: 30px;
+}
+
+.año_descripcion {
+    font-weight: bold;
+    font-size: 20px
+}
+
+.institucion {
+    font-style: italic;
+}
+
+.cursos {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+/**
+Habilidades
+*/
+
+.contenedor-habilidades {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+
+.intro-habilidades {
+    padding: 100px 0;
+    justify-content: center;
+    align-content: center;
+}
+  
+.habilidadestitulo {
+    font-size: 75px;
+    text-align: center;
+}
+
+/**
+Contacto
+*/
+
+.contenedor-contacto {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.formulario {
+    width:340px;
+    height: 525px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin: 100px auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    position:relative
+}
+
+
+.titulo_formulario {
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;color:#78788c;
+    border-bottom:3px solid #78788c
+}
+
+input {
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+
+input:focus {
+    border-bottom:2px solid #78788c
+}
+
+.texto_formulario:before {
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:20px;
+    color:#5a5a5a
+}
+
+.boton_formulario {
+    float:right;
+    padding:10px 12px;
+    margin:30px 0 0;
+    border:2px solid #8f8f92;
+    background: #8f8f92;
+    color:#D8E2D2;
+    border-radius:8px;
+    cursor:pointer;
+    transition:all .3s
+}
+
+.boton_formulario:hover {
+    background: #A9CD91;
+    color:#ffffff;
+    border:2px solid #A9CD91;
+}
+
+.texto_contacto {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
